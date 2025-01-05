@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    width: 100%;
+    height:100vh;   
+
+}
+.chat-container{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(51, 48, 48);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    overflow: auto;
+   
+
+}
+.load{
+    filter: drop-shadow( 2px 2px 10px black);
+    
+}
+.user{
+    width: 60%;
+   position: relative;
+   left:40%;
+   
+
+}
+.usertxt{
+    width: 90%;
+    padding: 20px;
+    background-color: black;
+color: white;
+border-radius: 40px 0px 40px 40px;
+box-shadow: 2px 2px 10px black;
+display:flex;
+gap:10px;
+flex-direction: column;
+}
+.chooseimg{
+    width:30%;
+    border-radius: 30px;
+
+
+}
+.choose{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.ai{
+    width: 60%;
+    position: relative;
+}
+.aitxt{
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(116, 193, 1, 0.573);
+    position: relative;
+    left:10%;
+    color: white;
+border-radius: 0px 40px 40px 40px;
+box-shadow: 2px 2px 10px black;
+
+}
+#userim{
+    position: absolute;
+right: 0;
+filter: drop-shadow( 2px 2px 10px black);
+
+}
+#aiim{
+    position: absolute;
+    left: 0;
+    filter: drop-shadow( 2px 2px 10px black);
+}
+.prompt{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(51, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.prompt input{
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    overflow:none;
+    border:none;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+   
+    box-shadow: 2px 2px 10px black;
+
+}
+.prompt button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    border:none;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+transition: all 0.5s;
+
+}
+.prompt button:hover{
+    background-color: rgb(7, 127, 255);
+
+}
+#img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    align-content: center;
+}
+@media(max-width:600px){
+    .user{
+        width: 80%;
+        left:20%;
+    }
+    .ai{
+        width: 80%;
+       
+
+    }
+}
